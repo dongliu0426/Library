@@ -1,16 +1,16 @@
 struct Seg {
 	typedef int T;
 	static constexpr T unit = 0;
-	static constexpr T comb(T a, T b) {
+	static constexpr T comb(const T& a, const T& b) {
 		return a + b;
 	}
 
 	typedef int U;
 	static constexpr U lz_unit = 0;
-	static constexpr U lz_comb(U a, U b) {
+	static constexpr U lz_comb(const U& a, const U& b) {
 		return a + b;
 	}
-	static constexpr T use_lz(T a, int sz, U lz) {
+	static constexpr T use_lz(const T& a, int sz, const U& lz) {
 		return a + lz * sz;
 	}
 
@@ -52,13 +52,11 @@ struct Seg {
 	void push(int i) {
 		int h, j;
 
-		for (h = h_; h > 0; --h) {
-			j = i >> h;
-			if (lz[j] != lz_unit) {
+		for (h = h_; h > 0; h--)
+			if (lz[j = i >> h] != lz_unit) {
 				put(j << 1 | 0, lz[j]), put(j << 1 | 1, lz[j]);
 				lz[j] = lz_unit;
 			}
-		}
 	}
 
 	T query(int l, int r) {

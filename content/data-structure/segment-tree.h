@@ -1,7 +1,7 @@
 struct Seg {
 	typedef int T;
 	static constexpr T unit = INT_MAX;
-	static constexpr T comb(T a, T b) {
+	static constexpr T comb(const T& a, const T& b) {
 		return a < b ? a : b;
 	}
 
