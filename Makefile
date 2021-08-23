@@ -1,2 +1,2 @@
 test-compiles:
-	./scripts/compile-all.sh .
+	chmod +x ./scripts/compile-all.sh && ./scripts/compile-all.sh .

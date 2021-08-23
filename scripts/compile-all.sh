@@ -3,7 +3,7 @@ DIR=${1:-.}
 
 # use a precompiled header for the template to improve perf
 g++ -std=c++17 -O2 -Wall -Wextra -x c++-header $DIR/Contest/template.cpp
-trap "rm -f $DIR/Contest/template.cpp.gch" EXIT
+trap "rm -f $DIR/content/contest/template.cpp.gch" EXIT
 
 SCRIPT_DIR=$DIR/scripts
 tests="$(find $DIR/ -name '*.h' | grep -vFf $SCRIPT_DIR/skip_headers)"
