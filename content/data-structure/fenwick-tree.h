@@ -1,8 +1,11 @@
 template<class T> struct FT {
-	int n; vector<T> t;
+	int n;
+	vector<T> t;
 
-	FT() {}
-	FT(int n) : n(n), t(n) {}
+	void init(int n_) {
+		n = n_;
+		t.assign(n, 0);
+	}
 	void update(int i, const T& a) {
 		while (i < n) {
 			t[i] += a;

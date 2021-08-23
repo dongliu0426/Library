@@ -17,7 +17,7 @@ struct Seg {
 	int n_, h_;
 	vector<int> sz; vector<T> st; vector<U> lz;
 
-	Seg(int n) {
+	void init(int n) {
 		int i;
 
 		h_ = 0;
@@ -30,10 +30,10 @@ struct Seg {
 		for (i = n_ - 1; i > 0; i--)
 			sz[i] = sz[i << 1 | 0] + sz[i << 1 | 1];
 	}
-	Seg(const vector<T>& aa) {
+	void init(const vector<T>& aa) {
 		int i, n;
 
-		*this = Seg(n = (int) aa.size());
+		init(n = (int) aa.size());
 		for (i = 0; i < n_; i++)
 			st[i | n_] = i < n ? aa[i] : unit;
 		for (i = n_ - 1; i > 0; i--)

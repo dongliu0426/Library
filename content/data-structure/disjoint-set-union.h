@@ -1,8 +1,9 @@
 struct DSU {
 	vector<int> ds;
 
-	DSU() {}
-	DSU(int n) : ds(n, -1) {}
+	void init(int n) {
+		ds.assign(n, -1);
+	}
 	int find(int i) {
 		return ds[i] < 0 ? i : ds[i] = find(ds[i]);
 	}

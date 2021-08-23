@@ -5,18 +5,19 @@ struct Seg {
 		return a < b ? a : b;
 	}
 
-	int n_; vector<T> t;
-	Seg() {}
-	Seg(int n) {
+	int n_;
+	vector<T> t;
+
+	void init(int n) {
 		n_ = 1;
 		while (n_ < n)
 			n_ <<= 1;
 		t.assign(n_ << 1, unit);
 	}
-	Seg(const vector<T>& aa) {
+	void init(const vector<T>& aa) {
 		int i, n;
 
-		*this = Seg(n = (int) aa.size());
+		init(n = (int) aa.size());
 		for (i = 0; i < n_; i++)
 			t[i | n_] = i < n ? aa[i] : unit;
 		for (i = n_ - 1; i > 0; i--)
