@@ -1,5 +1,5 @@
 vector<int> suffix_array(const char *s) {
-	int i, sz, n = strlen(s);
+	int i, s1, sz, n = strlen(s);
 	vector<int> sa(n), c(n);
 
 	for (i = 0; i < n; i++) {
@@ -18,7 +18,7 @@ vector<int> suffix_array(const char *s) {
 			           ? c[sa[i - 1]] : i;
 		vector<int> cnt(n), sa_(sa);
 		for (i = 0; i < n; i++) cnt[i] = i;
-		for (i = 0, s1; i < n; i++) {
+		for (i = 0; i < n; i++) {
 			s1 = sa_[i] - sz;
 			if (s1 >= 0)
 				sa[cnt[c[s1]]++] = s1;

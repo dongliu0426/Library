@@ -1,8 +1,8 @@
 vector<int> kmp(const char* s) {
-	int i, n = strlen(s);
+	int i, j, n = strlen(s);
 
 	vector<int> f(n);
-	for (i = 1, j; i < n; i++) {
+	for (i = 1; i < n; i++) {
 		j = f[i - 1];
 		while (j > 0 && s[i] != s[j])
 			j = f[j - 1];
