@@ -28,12 +28,12 @@ vector<int> suffix_array(const char *s) {
 }
 
 vector<int> lcp_array(const vector<int>& sa, const char* s) {
-	int i, n = strlen(s);
+	int i, j, pre, n = strlen(s);
 	vector<int> rank(n), lcp(n - 1);
 
 	for (i = 0; i < n; i++)
 		rank[sa[i]] = i;
-	for (i = 0, pre = 0, j; i < n; i++) {
+	for (i = 0, pre = 0; i < n; i++) {
 		if (rank[i] < n - 1) {
 			j = sa[rank[i] + 1];
 			while (max(i, j) + pre < n && s[i + pre] == s[j + pre])
