@@ -1,10 +1,10 @@
 template<class T> struct Compress {
 	vector<T> tt;
 
-	void insert(const T& a) {
-		tt.push_back(x);
+	void add(const T& a) {
+		tt.push_back(a);
 	}
-	void insert(const vector<T>& aa) {
+	void add(const vector<T>& aa) {
 		for (const T& a : aa)
 			insert(a);
 	}
