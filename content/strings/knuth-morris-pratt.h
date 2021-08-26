@@ -14,7 +14,6 @@ vector<int> kmp(const char* s) {
 
 }
 
-/* find occurrences of a in b */
 vector<int> get_oc(const char* a, const char* b) {
 	int i, n = strlen(a), m = strlen(b);
 	char *c = (char *) malloc((n + m + 2) * sizeof(char));

@@ -1,0 +1,6 @@
+{
+	"name": "Binary Search",
+	"description": "Binary search on first true or last true of a monotonic function.",
+	"time": "O(\\log N)",
+	"source": "Benq"
+}

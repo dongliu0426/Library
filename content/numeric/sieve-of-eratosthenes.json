@@ -1,0 +1,6 @@
+{
+	"name": "Sieve of Eratosthenes",
+	"description": "kk[n] = largest prime factor of n. is prime when n = kk[n].",
+	"time": "O(N\\log^2N)",
+	"source": "own"
+}

@@ -1,0 +1,6 @@
+{
+	"name": "Disjoint Set Union",
+	"description": "Data structure that allows adding edges and querying connectivity between two nodes. Also known as Union Find. Used for Kruskal's minimum spanning tree algorithm.",
+	"time": "O(\\alpha(N))",
+	"source": "KACTL"
+}

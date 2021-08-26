@@ -1,0 +1,6 @@
+{
+	"name": "Lazy Segment Tree",
+	"description": "Segment Tree but with range updates.",
+	"time": "O(\\log N)",
+	"source": "own"
+}

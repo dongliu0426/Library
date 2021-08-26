@@ -1,0 +1,6 @@
+{
+	"name": "Suffix Array",
+	"description": "Finds the sorted order of all suffixes of a string. Also calculates the Longest Common Prefix between two suffixes.",
+	"time": "O(N\\log N) for Suffix Array, O(N) for LCP array",
+	"source": "https://ekzlib.netlify.app/view/suffix_array.cpp"
+}

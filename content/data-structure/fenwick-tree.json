@@ -1,0 +1,6 @@
+{
+	"name": "Fenwick Tree",
+	"description": "Data structure that allows point add range sum queries. Also known as Binary Indexed Tree.",
+	"time": "O(\\log N)",
+	"source": "own"
+}

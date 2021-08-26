@@ -1,0 +1,6 @@
+{
+	"name": "Segment Tree",
+	"description": "Data structure that supports point updates and range queries for associative functions.",
+	"time" : "O(\\log N)",
+	"source:" "own"
+}

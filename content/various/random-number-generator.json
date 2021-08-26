@@ -1,0 +1,6 @@
+{
+	"name": "Random Number Generator",
+	"description": "Efficient generator for random integers.",
+	"time": "O(1)",
+	"source": "own"
+}

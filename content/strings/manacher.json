@@ -1,0 +1,6 @@
+{
+	"name": "Manacher",
+	"description": "Finds length of largest palindrome centered at each position.",
+	"time": "O(N)",
+	"source": "http://codeforces.com/blog/entry/12143"
+}

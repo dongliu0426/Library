@@ -1,0 +1,6 @@
+{
+	"name": "Toplogical Sort",
+	"description": "Sorts nodes in a DAG so that for every edge (u, v), u goes before v",
+	"time": "O(N + M)",
+	"source": "own"
+}

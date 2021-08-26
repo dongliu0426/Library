@@ -1,5 +1,3 @@
-/* z[i] = longest common prefix between s
-	and the suffix starting at i */
 vector<int> Z(const char *s) {
 	int i, l, r, n = strlen(s);
 	vector<int> z(n);

@@ -1,0 +1,6 @@
+{
+	"name": "Euler Totient Function",
+	"description": "phi[n] = number of integers (i <= n) such that gcd(i, n) = 1.",
+	"time": "O(N\\log^2N)",
+	"source": "own"
+}

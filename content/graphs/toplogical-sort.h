@@ -16,7 +16,7 @@ struct TopoSort {
 
 		q.reserve(n), r.reserve(n);
 		for (i = 0; i < n; i++)
-			if (!w[i])
+			if (w[i] == 0)
 				q.push_back(i);
 		for (i = 0; i < (int) q.size(); i++) {
 			int u = q[i];

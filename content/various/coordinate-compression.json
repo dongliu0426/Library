@@ -1,0 +1,6 @@
+{
+	"name": "Coordinate Compression",
+	"description": "Maps values from a large range into a smaller one.",
+	"time": "O(N\\log N)",
+	"source": "own"
+}
