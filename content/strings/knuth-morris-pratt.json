@@ -1,6 +1,6 @@
 {
 	"name": "Knuth Morris Pratt",
-	"description": "f[i] is the length of the longest suffix of the ith prefix that is a prefix of s",
+	"description": "$f[i]$ is the length of the longest suffix of the $i$th prefix that is a prefix of $s$.",
 	"time": "O(N)",
 	"source": "cp-algorithms"
 }

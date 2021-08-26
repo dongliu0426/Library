@@ -1,6 +1,6 @@
 {
 	"name": "Z-function",
-	"description": "z[i] = longest common prefix between s and the suffix starting at i.",
+	"description": "$z[i]$ = longest common prefix between $s$ and the suffix starting at $i$.",
 	"time": "O(N)",
 	"source": "cp-algorithms"
 }
