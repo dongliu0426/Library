@@ -2,5 +2,5 @@
 	"name": "Minimal Rotation",
 	"description": "Finds minimal cyclic rotation of a string.",
 	"time": "O(N)",
-	"source": "kactl"
+	"source": "KACTL"
 }
